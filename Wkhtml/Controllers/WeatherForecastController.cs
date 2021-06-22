@@ -48,7 +48,7 @@ namespace Wkhtml.Controllers
 
             var data = new WeatherForecast
             {
-                Date = DateTime.Now.AddDays(1),
+                Date = DateTime.Now.AddDays(rng.Next(0,100)),
                 TemperatureC = rng.Next(-20, 55),
                 Summary = Summaries[rng.Next(Summaries.Length)]
             };
